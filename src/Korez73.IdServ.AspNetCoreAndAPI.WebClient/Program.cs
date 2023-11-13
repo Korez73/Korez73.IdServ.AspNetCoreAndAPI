@@ -17,21 +17,21 @@ builder.Services.AddAuthentication(options => {
     .AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options => {
         options.Authority = "https://localhost:5001";
 
-        //options.ClientId = "web";
-        //options.ClientSecret = "secret";
-        options.ClientId = "Korez73.IdServ.InteractiveApi.WebClient";
+        options.ClientId = "Korez73.IdServ.AspNetCoreAndAPI.WebClient";
         options.ClientSecret = "49C1A7E1-0C79-4A89-A3D6-A37998FB86B0";
-
         options.ResponseType = "code";
+
+        options.SaveTokens = true;
 
         options.Scope.Clear();
         options.Scope.Add("openid");
         options.Scope.Add("profile");
-        options.Scope.Add("verification");
-        options.ClaimActions.MapJsonKey("email_verified", "email_verified");
+        options.Scope.Add("api1");
+        options.Scope.Add("offline_access");
+        //options.ClaimActions.MapJsonKey("email_verified", "email_verified");
         options.GetClaimsFromUserInfoEndpoint = true;
 
-        options.SaveTokens = true;
+        
     });
 
 var app = builder.Build();
