@@ -25,7 +25,7 @@ public static class Config
     public static IEnumerable<ApiScope> ApiScopes =>
         new List<ApiScope>
         {
-            new ApiScope("api1", "MyAPI")
+            new ApiScope("Korez73.IdServ.AspNetCoreAndAPI.API", "Korez73.IdServ.AspNetCoreAndAPI.API")
         };
 
     public static IEnumerable<Client> Clients =>
@@ -49,7 +49,7 @@ public static class Config
                 {
                     IdentityServerConstants.StandardScopes.OpenId,
                     IdentityServerConstants.StandardScopes.Profile,
-                    "api1"
+                    "Korez73.IdServ.AspNetCoreAndAPI.API"
                 }
             }
         };

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korez73.IdServ.AspNetCoreAn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korez73.IdServ.AspNetCoreAndAPI.WebClient", "src\Korez73.IdServ.AspNetCoreAndAPI.WebClient\Korez73.IdServ.AspNetCoreAndAPI.WebClient.csproj", "{02031EFA-9FEC-45F4-B8ED-58843CAB1A60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korez73.IdServ.ProtectAPI.API", "src\Korez73.IdServ.AspNetCoreAndAPI.API\Korez73.IdServ.ProtectAPI.API.csproj", "{BEA25ACA-115A-47B7-A3AC-73A900F618D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +28,14 @@ Global
 		{02031EFA-9FEC-45F4-B8ED-58843CAB1A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02031EFA-9FEC-45F4-B8ED-58843CAB1A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02031EFA-9FEC-45F4-B8ED-58843CAB1A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA25ACA-115A-47B7-A3AC-73A900F618D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA25ACA-115A-47B7-A3AC-73A900F618D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA25ACA-115A-47B7-A3AC-73A900F618D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA25ACA-115A-47B7-A3AC-73A900F618D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9C6F431F-8DB5-43BE-B012-8FBB3F39DF40} = {816FFDD2-10DD-403C-9AAC-03E509C99BDF}
 		{02031EFA-9FEC-45F4-B8ED-58843CAB1A60} = {816FFDD2-10DD-403C-9AAC-03E509C99BDF}
+		{BEA25ACA-115A-47B7-A3AC-73A900F618D6} = {816FFDD2-10DD-403C-9AAC-03E509C99BDF}
 	EndGlobalSection
 EndGlobal
